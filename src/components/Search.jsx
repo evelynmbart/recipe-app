@@ -10,7 +10,7 @@ export function Search() {
   };
 
   return (
-    <FormStyle>
+    <FormStyle onSubmit={submitHandler}>
       <div>
         <FaSearch />
         <input

@@ -1,8 +1,8 @@
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import { Category } from "./components/Category";
+import { Search } from "./components/Search";
 import { Pages } from "./pages/Pages";
-import { Search } from "./pages/Search";
 
 function App() {
   return (
