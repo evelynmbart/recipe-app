@@ -1,3 +1,4 @@
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import { Category } from "./components/Category";
 import { Pages } from "./pages/Pages";
@@ -5,8 +6,10 @@ import { Pages } from "./pages/Pages";
 function App() {
   return (
     <div className="App">
-      <Pages />
-      <Category />
+      <BrowserRouter>
+        <Category />
+        <Pages />
+      </BrowserRouter>
     </div>
   );
 }
