@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import { Cuisine } from "./Cuisine";
 import { Home } from "./Home";
-import { Searched } from "./Searched";
 import { Recipe } from "./Recipe";
+import { Searched } from "./Searched";
 
 export function Pages() {
   return (
