@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 export function Search() {
@@ -13,21 +13,29 @@ export function Search() {
   };
 
   return (
-    <FormStyle onSubmit={submitHandler}>
-      <div>
-        <FaSearch />
-        <input
-          type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-        />
-      </div>
-    </FormStyle>
+    <Nav>
+      <img
+        src="https://www.pngkey.com/png/detail/201-2018051_fork-and-knife-cutlery-circle-interface-symbol-for.png"
+        alt="fork and knife logo"
+      />
+      <Logo to={"/"}>Delicious</Logo>
+
+      <FormStyle onSubmit={submitHandler}>
+        <div>
+          <FaSearch />
+          <input
+            type="text"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+          />
+        </div>
+      </FormStyle>
+    </Nav>
   );
 }
 
 const FormStyle = styled.form`
-  margin: 1rem 20rem;
+  margin: 1rem 12rem;
   div {
     position: relative;
     width: 100%;
@@ -49,5 +57,24 @@ const FormStyle = styled.form`
     left: 0%;
     transform: translate(100%, -50%);
     color: white;
+  }
+`;
+
+const Logo = styled(Link)`
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Lobster Two", cursive;
+`;
+
+const Nav = styled.div`
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-left: 2rem;
+
+  img {
+    width: 80px;
+    object-fit: contain;
   }
 `;
