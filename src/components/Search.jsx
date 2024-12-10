@@ -14,28 +14,55 @@ export function Search() {
 
   return (
     <Nav>
-      <img
-        src="https://www.pngkey.com/png/detail/201-2018051_fork-and-knife-cutlery-circle-interface-symbol-for.png"
-        alt="fork and knife logo"
-      />
-      <Logo to={"/"}>Delicious</Logo>
-
-      <FormStyle onSubmit={submitHandler}>
-        <div>
-          <FaSearch />
-          <input
-            type="text"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-          />
-        </div>
-      </FormStyle>
+      <Title>
+        <img
+          src="https://www.pngkey.com/png/detail/201-2018051_fork-and-knife-cutlery-circle-interface-symbol-for.png"
+          alt="fork and knife logo"
+        />
+        <Logo to={"/"}>Delicious</Logo>
+      </Title>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <FormStyle onSubmit={submitHandler}>
+          <div>
+            <FaSearch />
+            <input
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+            />
+          </div>
+        </FormStyle>
+      </div>
     </Nav>
   );
 }
 
+const Nav = styled.div`
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  max-width: 59%;
+  justify-content: space-between;
+  img {
+    width: 80px;
+    object-fit: contain;
+  }
+`;
+
+const Title = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+`;
+
+const Logo = styled(Link)`
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Lobster Two", cursive;
+`;
+
 const FormStyle = styled.form`
-  margin: 1rem 12rem;
   div {
     position: relative;
     width: 100%;
@@ -57,24 +84,5 @@ const FormStyle = styled.form`
     left: 0%;
     transform: translate(100%, -50%);
     color: white;
-  }
-`;
-
-const Logo = styled(Link)`
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: 700;
-  font-family: "Lobster Two", cursive;
-`;
-
-const Nav = styled.div`
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  margin-left: 2rem;
-
-  img {
-    width: 80px;
-    object-fit: contain;
   }
 `;
