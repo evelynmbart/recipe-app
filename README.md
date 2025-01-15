@@ -1,8 +1,15 @@
-# React + Vite
+# Recipe Finder: Discover Your Next Meal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **Recipe Finder**! 🍽️ The app that helps you discover new and exciting recipes for any occasion. Whether you're looking for quick meals, healthy options, or something special to impress guests, Recipe Finder has you covered.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Search Recipes**: Easily search for recipes by ingredients, cuisine, or meal type.
+- **Browse & Explore**: Look through a wide variety of recipes with detailed instructions and ingredients.
+
+## Why Recipe Finder?
+
+- **Simple & Easy**: Find what you're craving in just a few taps.
+- **Endless Options**: From simple snacks to gourmet dishes, there's always something new to try.
+
+Ready to find your next favorite meal? Start using **Recipe Finder** today and get cooking!
